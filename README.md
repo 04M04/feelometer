@@ -1,2 +1,2 @@
 # feelometer
-This application will show how my day goes. ;-)
+This application will show how my day goes. 😋
