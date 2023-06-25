@@ -1,0 +1,11 @@
+.feeling_line {
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-size: 8rem;
+  color: #000000;
+  text-align: center;
+}
+
+.feeling_symbol {
+  font-size: 200px;
+  text-align: center;
+}

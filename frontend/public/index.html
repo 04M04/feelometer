@@ -1,23 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="dist/index.js" type="module"></script>
-    <title>feelometer</title>
-    <style>
-        #list{
-            list-style: none;
-            padding: 0;
-        }
-    </style>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/res/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web site created using create-snowpack-app" />
+  <link rel="stylesheet" type="text/css" href="/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>feelometer</title>
 </head>
+
 <body>
-    <h1>feelometer</h1>
-    
-    <script type="module" src="/dist/index.js"></script>    
+  <div class="h-screen relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
+    style="background-image: url('/res/background.jpg');">
+    <p class="feeling_line">feelometer</p>
+    <p class="feeling_symbol">⚡️</p>
+
+    <div class="rating flex flex-row justify-center gap-3 relative">
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center bg-rose-400">
+        <p class="text-6xl mt-4 select-none pointer-events-none">☠️</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">🤬</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😡</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😠</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😭</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😢</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😟</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">🙁</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😐</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">🙂</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😊</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😄</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😁</p>
+      </div>
+      <div class="w-60 h-4 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center ">
+        <p class="text-6xl mt-4 hidden select-none pointer-events-none">😋</p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script type="module" src="/dist/index.js"></script>
 </body>
+
 </html>
