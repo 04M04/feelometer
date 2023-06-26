@@ -1,29 +1,6 @@
 console.log("Get to see what I feel right now.");
 
 
-
-// const rate = document.querySelector('.rating');
-// if (rate) {
-//     const childs = rate.children;
-//     let currentShowing = childs[0].children[0];
-//     console.log(currentShowing);
-//     for (let i = 0; i < childs.length; i++) {
-//         childs[i].onclick = () => {
-//             console.log(i);
-//             currentShowing.classList.add('hidden');
-//             const emote = childs[i].querySelector('p');
-//             emote?.classList.remove('hidden');
-//             currentShowing = emote;
-//             for (let j = 0; j <= i; j++) {
-//                 childs[j].classList.add("bg-rose-400"); // this class should be added to whitelist while in production mode
-//             }
-//             for (let k = i + 1; k < childs.length; k++) {
-//                 childs[k].classList.remove("bg-rose-400"); // this class should be added to whitelist while in production mode
-//             }
-//         }
-//     }
-// }
-
 const feelingSymbolElement = document.querySelector('.feeling_symbol');
 const feelingRateElement = document.querySelector('.rating');
 const feelingRateElements = feelingRateElement?.children;
