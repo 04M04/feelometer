@@ -33,6 +33,7 @@ async def root():
     # global feeling_state
     return feeling_state
 
+
 @app.put("/feeling/update")
 async def create_or_update_feeling(feeling_update: feeling_model) -> feeling_model:
     global feeling_state

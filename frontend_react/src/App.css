@@ -1,28 +1,7 @@
-.App {
-  text-align: center;
-}
-.App code {
-  background: #FFF3;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-.App p {
-  margin: 0.4rem;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,0,0,0.5046612394957983) 0%, rgba(240,168,0,0.5074623599439776) 22%, rgba(232,255,0,0.6783307072829132) 50%, rgba(0,249,255,0.6587228641456583) 79%, rgba(0,0,255,0.4822522759103641) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,11 +15,15 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feeling_line {
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-size: 8rem;
+  color: #000000;
+  text-align: center;
 }
+
+.feeling_symbol {
+  font-size: 200px;
+  text-align: center;
+}
+
