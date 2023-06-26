@@ -34,8 +34,6 @@ async function setFeelingRate(feelingCount: number) {
         feelingCount ? feelingCount : 0;
         if (feelingCount > 13) feelingCount = 13;
         if (feelingCount < 0) feelingCount = 0;
-
-        let i = feelingCount;
         
         for (let j = 0; j <= 13; j++) {
             if(!feelingRateElements[j].children[0].classList.contains('hidden')){
@@ -43,13 +41,13 @@ async function setFeelingRate(feelingCount: number) {
             }
         }
 
-        const emote = feelingRateElements[i].querySelector('p');
+        const emote = feelingRateElements[feelingCount].querySelector('p');
         emote?.classList.remove('hidden');
 
-        for (let j = 0; j <= i; j++) {
+        for (let j = 0; j <= feelingCount; j++) {
             feelingRateElements[j].classList.add("bg-blue-500"); // this class should be added to whitelist while in production mode
         }
-        for (let k = i + 1; k < feelingRateElements.length; k++) {
+        for (let k = feelingCount + 1; k < feelingRateElements.length; k++) {
             feelingRateElements[k].classList.remove("bg-blue-500"); // this class should be added to whitelist while in production mode
         }
     }
